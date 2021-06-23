@@ -1,0 +1,206 @@
+:root{
+   --dark: #4a4a4a;
+   --light: #c8c8c8;
+   --blue: #238df8;
+   --yellow: #fad435;
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: 16px;
+    font-family: 'source code pro', monospace;
+    background-color: #4a4a4a;
+}
+
+h1{
+    font-size: 3.8rem;
+    }
+h2{
+        font-size: 2.8rem;
+    }
+h3{
+        font-size: 1.8rem;
+    }
+h1,h2,h3 {
+        text-align: center;
+    }
+.navegacion{
+    background-color: #4a4a4a;
+    text-align: center;
+    padding: 1rem;
+}
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.navegacion-principal a{
+    color: #c8c8c8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+.navegacion-principal a:hover{
+    background-color: #c8c8c8;
+    color: #4a4a4a;
+    border-radius: 2rem;
+}
+
+.hero{
+    background-image: url(../img/hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.contenedor-hero{
+   position: absolute;
+   width: 100%;
+   height: 170%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.contenedor-hero h2, .contenedor-hero p{
+    color: #fad435;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: -1rem;
+}
+
+.top{
+    background-color: white;
+}
+
+@media (min-width: 768px){
+    .service{
+        display: grid;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    .service{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service h3{
+    color: white;
+    font-size: 2rem;
+}
+.service p{
+    color: white;
+    line-height: 2;
+    padding-left: 40rem;
+    padding-right: 40rem;
+}
+.service .icon{
+    height: 15rem;
+    width: 15rem;
+    background-color: #fad435;
+    border-radius: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ending{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.ending h4{
+    color: white;
+}
+
+
+/*contacto*/
+.formulario{
+    background-color: white;
+   width: min( 60rem, 100%);
+   margin: auto;
+   padding: 2rem;
+   border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #4a4a4a;
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo label{
+    color: #4a4a4a;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+@media (min-width: 768px){
+    .redes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+}
+
+
+.redes h3{
+    color: #238df8;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.redes p{
+    color: #238df8;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+@media (max-width: 480px){
+       .redes p{
+           display: flex;
+           justify-content: center;
+       }
+}
